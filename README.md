@@ -1,6 +1,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+build a front end where people are able to upload their resume
+once uploaded it will be parsed and sorted based on job requirement
+build a dashboard where HR team can search for specific keywords
+
 
 <!-- ROADMAP -->
 ## Roadmap
