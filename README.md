@@ -9,7 +9,7 @@ build a dashboard where HR team can search for specific keywords
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] File upload
+- [x] File upload
 - [ ] Read and parse file (excel sheet)
 - [ ] Filtering system specific keyword search
 
