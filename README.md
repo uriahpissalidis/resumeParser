@@ -10,7 +10,7 @@ build a dashboard where HR team can search for specific keywords
 ## Roadmap
 
 - [x] File upload
-- [ ] Read and parse file (excel sheet)
+- [x] Read and parse file (excel sheet)
 - [ ] Filtering system specific keyword search
 
 
