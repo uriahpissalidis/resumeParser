@@ -1,5 +1,8 @@
+import "../styles/ParseExcel.css";
 import React, { useState } from "react";
 import * as XLSX from "xlsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export const ParseExcel = () => {
   const [fileName, setFileName] = useState(null);
@@ -17,23 +20,25 @@ export const ParseExcel = () => {
     // parse through the workbook
     const workbook = XLSX.read(data);
 
-    const worksheet = workbook.Sheets[workbook.SheetNames[0]]
-    const jsonData = XLSX.utils.sheet_to_json(worksheet)
+    const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+    const jsonData = XLSX.utils.sheet_to_json(worksheet);
 
     console.log(jsonData);
   };
 
   return (
-    <div>
-      <h1>Parse</h1>
-
-      {fileName && (
-        <p>
-          FileName: <span>{fileName}</span>
-        </p>
-      )}
-
-      <input type="file" onChange={(e) => handleFile(e)} />
-    </div>
+    <>
+      <div className="body">
+        <div className="drag-area">
+          <div className="icon">
+            <FontAwesomeIcon icon={faCloudArrowUp} />
+          </div>
+          <header>Upload File</header>
+          <label>
+            <input type="file" onChange={(e) => handleFile(e)} />
+          </label>      
+        </div>
+      </div>
+    </>
   );
 };
