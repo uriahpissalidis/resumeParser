@@ -15,7 +15,7 @@ build a dashboard where HR team can search for specific keywords
   - [x] Navbar
   - [ ] Header
   - [ ] Body
-  - [ ] Footer
+  - [x] Footer
 - [ ] Filtering system specific keyword search
 
 
