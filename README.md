@@ -11,10 +11,10 @@ build a dashboard where HR team can search for specific keywords
 
 - [x] File upload
 - [x] Read and parse file (excel sheet)
-- [] Frontend
+- [ ] Frontend
   - [x] Navbar
-  - [] Body
-  - [] Footer
+  - [ ] Body
+  - [ ] Footer
 - [ ] Filtering system specific keyword search
 
 
