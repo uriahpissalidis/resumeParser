@@ -36,7 +36,7 @@ export const ParseExcel = () => {
           <header>Upload File</header>
           <label>
             <input type="file" onChange={(e) => handleFile(e)} />
-          </label>      
+          </label>
         </div>
       </div>
     </>
