@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Footer.css";
 
 const Footer = () => (
   <footer className="bg-dark text-center text-white page-footer font-small blue pt-4">
@@ -7,8 +8,9 @@ const Footer = () => (
         <div className="col-md-6 mt-md-0 mt-3">
           <h5 className="text-uppercase">ResConnect</h5>
           <p>
-            Here with our resume parser you can find jobs and connect with recruiters. 
-            Increase your chances of getting that job and gain confidence now.
+            Here with our resume parser you can find jobs and connect with
+            recruiters. Increase your chances of getting that job and gain
+            confidence now.
           </p>
         </div>
 
@@ -52,8 +54,10 @@ const Footer = () => (
       </div>
     </div>
 
+    
+
     <div className="footer-copyright text-center py-3">
-      © 2020 Copyright:
+      © 2022 Copyright:
       <p>Josh Miranda</p>
     </div>
   </footer>

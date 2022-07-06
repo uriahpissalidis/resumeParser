@@ -1,27 +1,30 @@
 .border-first-button a {
     display: inline-block !important;
     padding: 10px 20px !important;
-    color: #536DFE !important;
-    border: 1px solid #536DFE !important;
+    color: #8DAFCE !important;
+    border: 1px solid #8DAFCE !important;
     border-radius: 23px;
     font-weight: 500 !important;
     letter-spacing: 0.3px !important;
     transition: all .5s;
+    text-decoration: none;
   }
   
   .border-first-button a:hover {
-    background-color: #536DFE;
-    color: #fff !important;
+    background-color: #8DAFCE;
+    color: #E5EAEF !important;
+
   }
 
   
 .main-banner {
     background-position: center center;
-    background-color: #1C1C21;
+    background-color: #272B2F;
     background-size: cover;
     padding: 226px 0px 120px 0px;
     position: relative;
     overflow: hidden;
+    min-height: calc(100vh - 56px - 264px);
   }
   
   .main-banner .left-content {
@@ -32,7 +35,7 @@
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 700;
-    color: #536DFE;
+    color: #8DAFCE;
     margin-bottom: 15px;
     text-transform: uppercase;
   }
@@ -42,14 +45,14 @@
     position: relative;
     font-weight: 700;
     font-size: 50px;
-    color: #536DFE;
+    color: #8DAFCE;
     margin-bottom: 20px;
   }
   
   .main-banner .left-content p {
     margin-bottom: 30px;
     margin-right: 45px;
-    color: #536DFE;
+    color: #E5EAEF;
   }
   
   .main-banner .right-image {

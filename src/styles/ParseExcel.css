@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #1C1C21;
+    padding: 150px;
+    background-color: #272B2F;
+    min-height: calc(100vh - 56px - 264px);
 }
 
 .drag-area {
-    border: 2px dashed #fff;
+    border: 2px dashed #E5EAEF;
     height: 500px;
     width: 700px;
     border-radius: 5px;
@@ -19,14 +20,14 @@
 
 .drag-area .icon {
     font-size: 100px;
-    color: #fff;
+    color: #E5EAEF;
     align-items: center;
 }
 
 .drag-area header {
     font-size: 30px;
     font-weight: 500;
-    color: #fff;
+    color: #E5EAEF;
 }
 
 .drag-area label {
