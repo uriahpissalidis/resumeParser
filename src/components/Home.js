@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -27,7 +28,7 @@ function Home() {
                     </div>
                     <div className="col-lg-12">
                       <div className="border-first-button">
-                        <a href="#contact">Check Resume</a>
+                        <Link as={Link} to="/parse">Check Resume</Link>
                       </div>
                     </div>
                   </div>
