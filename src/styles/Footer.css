@@ -1,3 +1,20 @@
-footer {
-    text-decoration: none;
+.text-decoration-none {
+  color: grey;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text-reset {
+  text-decoration: none;
+}
+
+.text-reset a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }

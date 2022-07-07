@@ -1,136 +1,144 @@
 import React from "react";
 import "../styles/Footer.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => (
-  <footer class="py-8 py-md-11 bg-dark text-center text-white page-footer font-small blue pt-4" >
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-4 col-lg-3">
-          <p class="text-gray-700 mb-2">
+  <footer className="py-8 py-md-11 bg-dark text-center text-white page-footer font-small blue pt-4">
+    <div className="container">
+      <div className="row">
+        <div className="col-12 col-md-4 col-lg-3">
+          <h5 className="text-uppercase">ResConnect</h5>
+          <p className="text-gray-700 mb-2">
             Here with our resume parser you can find jobs and connect with
             recruiters. Increase your chances of getting that job and gain
             confidence now.
           </p>
 
-          <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-            <li class="list-inline-item list-social-item me-3">
-              <Link as={Link} class="text-decoration-none" to="/parse">
-                Check Resume
-              </Link>
+          <ul className="list-unstyled list-inline list-social mb-6 mb-md-0">
+            <li className="list-inline-item list-social-item me-3">
+              <a href="#!" className="text-decoration-none">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
             </li>
-            <li class="list-inline-item list-social-item me-3">
-              <Link as={Link} class="text-decoration-none" to="/parse">
-                Check Resume
-              </Link>
+            <li className="list-inline-item list-social-item me-3">
+              <a href="#!" className="text-decoration-none">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
             </li>
-            <li class="list-inline-item list-social-item me-3">
-              <Link as={Link} class="text-decoration-none" to="/parse">
-                Check Resume
-              </Link>
+            <li className="list-inline-item list-social-item me-3">
+              <a href="#!" className="text-decoration-none">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
             </li>
-            <li class="list-inline-item list-social-item">
-              <Link as={Link} class="text-decoration-none" to="/parse">
-                Check Resume
-              </Link>
+            <li className="list-inline-item list-social-item">
+              <a href="#!" className="text-decoration-none">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
             </li>
           </ul>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <h6 class="fw-bold text-uppercase text-gray-700">Products</h6>
+        <div className="col-6 col-md-4 col-lg-2">
+          <h6 className="fw-bold text-uppercase text-gray-700">Products</h6>
 
-          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Page Builder
+          <ul className="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                About
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                UI Kit
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Features
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Styleguide
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Pricing
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
                 Documentation
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <h6 class="fw-bold text-uppercase text-gray-700">Services</h6>
+        <div className="col-6 col-md-4 col-lg-2">
+          <h6 className="fw-bold text-uppercase text-gray-700">Services</h6>
 
-          <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Documentation
+          <ul className="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Consultation
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Changelog
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Behavioral
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Pagebuilder
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Technical
               </a>
             </li>
             <li>
-              <a href="#!" class="text-reset">
-                UI Kit
+              <a href="#!" className="text-reset">
+                Resume
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
-          <h6 class="fw-bold text-uppercase text-gray-700">Connect</h6>
+        <div className="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+          <h6 className="fw-bold text-uppercase text-gray-700">Connect</h6>
 
-          <ul class="list-unstyled text-muted mb-0">
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Page Builder
+          <ul className="list-unstyled text-muted mb-0">
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Partners
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                UI Kit
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Resources
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Styleguide
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Community
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Documentation
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Contact
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <h6 class="fw-bold text-uppercase text-gray-700">Legal</h6>
+        <div className="col-6 col-md-4 col-lg-2">
+          <h6 className="fw-bold text-uppercase text-gray-700">Legal</h6>
 
-          <ul class="list-unstyled text-muted mb-0">
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
+          <ul className="list-unstyled text-muted mb-0">
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
                 Documentation
               </a>
             </li>
-            <li class="mb-3">
-              <a href="#!" class="text-reset">
-                Changelog
+            <li className="mb-3">
+              <a href="#!" className="text-reset">
+                Terms
               </a>
             </li>
             <li>
-              <a href="#!" class="text-reset">
-                Pagebuilder
+              <a href="#!" className="text-reset">
+                Privacy
               </a>
             </li>
           </ul>
