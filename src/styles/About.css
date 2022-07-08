@@ -1,41 +1,36 @@
-
 .page-wrapper {
-    padding: 50px;
-    font-size: 18px;
-    background-color: #272B2F;
-    min-height: calc(100vh - 56px - 200px);
+  padding: 50px;
+  font-size: 18px;
+  background-color: #272b2f;
+  min-height: calc(100vh - 56px - 200px);
 }
 
 .container.pb-5.mb-md-2.mb-lg-4 {
-    color: #E5EAEF;
+  color: #e5eaef;
 }
 
 .border-bottom {
-    color: #8DAFCE;
+  color: #8dafce;
 }
 
 .pb-3 {
-    color: #8DAFCE;
+  color: #8dafce;
 }
 
 .container.rounded-3.py-5.px-3.px-md-0 {
-    background-color: #1C1C21;
+  background-color: #1c1c21;
 }
 
 .card {
-    background-color: #272B2F;
-    color: #E5EAEF;
+  background-color: #272b2f;
+  color: #e5eaef;
 }
 
 .image {
-    font-size: 40px;
-    color: #8DAFCE;
+  font-size: 40px;
+  color: #8dafce;
 }
 
 .card.rounded-3 {
-    background-color: #1C1C21;
-
+  background-color: #1c1c21;
 }
-
-
-
