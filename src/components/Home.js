@@ -16,13 +16,10 @@ function Home() {
                       <h6>ResConnect Network</h6>
                       <h2>Have Confidence In Your Resume</h2>
                       <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                      tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas 
-                      integer eget aliquet. Sit amet porttitor eget dolor morbi non arcu risus. 
-                      Mauris vitae ultricies leo integer malesuada nunc vel. Sed risus pretium 
-                      quam vulputate dignissim suspendisse in. Vulputate ut pharetra sit amet 
-                      aliquam id diam maecenas ultricies. Vel quam elementum pulvinar etiam. 
-                      Suspendisse interdum consectetur libero id faucibus 
+                        The job searching stage can be overwhelming and scary. That is why ResConnect
+                        was created! We created this software so that it can analyze and review your resume so that
+                        you can gain confidence in your resume. What are you waiting for? Start now and get ahead of the game!
+                      
                       
                       </p>
                     </div>
