@@ -45,5 +45,5 @@ ResConnect is a resume parsing tool that helps users connect to job recruiters. 
 
 - [ ] Send data from frontend to back end
 - [ ] Create dashboard organizing data
-- [ ] Filter sort to sort applicants based on job description
+- [ ] Search filter to sort applicants based on job description
 
