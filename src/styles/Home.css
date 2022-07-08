@@ -24,7 +24,7 @@
     padding: 226px 0px 120px 0px;
     position: relative;
     overflow: hidden;
-    min-height: calc(100vh - 56px - 264px);
+    min-height: calc(100vh - 56px - 200px);
   }
   
   .main-banner .left-content {
