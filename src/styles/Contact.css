@@ -1,0 +1,15 @@
+.page-wrapper {
+    padding: 50px;
+    font-size: 18px;
+    background-color: #272B2F;
+    min-height: calc(100vh - 56px - 200px);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #8DAFCE;
+    border-color: #8DAFCE;
+}
