@@ -1,44 +1,55 @@
 .body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 150px;
-    background-color: #272B2F;
-    min-height: calc(100vh - 56px - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+  background-color: #272b2f;
+  min-height: calc(100vh - 56px - 200px);
 }
 
 .drag-area {
-    border: 2px dashed #E5EAEF;
-    height: 500px;
-    width: 700px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  border: 2px dashed #e5eaef;
+  height: 500px;
+  width: 700px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .drag-area .icon {
-    font-size: 100px;
-    color: #E5EAEF;
-    align-items: center;
+  font-size: 100px;
+  color: #e5eaef;
+  align-items: center;
 }
 
 .drag-area header {
-    font-size: 30px;
-    font-weight: 500;
-    color: #E5EAEF;
+  font-size: 30px;
+  font-weight: 500;
+  color: #e5eaef;
 }
 
 .drag-area label {
-    padding: 10px 25px;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    color: #1C1C21;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #1c1c21;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+.container.rounded-3 {
+  color: red;
+  background-color: #272b2f;
+  padding: 50px;
+}
+
+.main {
+	background-color: #272b2f;
+	
+
+}

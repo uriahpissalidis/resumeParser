@@ -5,29 +5,36 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export const ParseExcel = () => {
-  const [fileName, setFileName] = useState(null);
+  const [items, setItems] = useState([]);
 
-  const handleFile = async (e) => {
-    // read file
-    const file = e.target.files[0];
+  const readExcel = (file) => {
+    const promise = new Promise((resolve, reject) => {
+      const fileReader = new FileReader();
+      fileReader.readAsArrayBuffer(file);
 
-    // set file name
-    setFileName(file.name);
+      fileReader.onload = (e) => {
+        const bufferArray = e.target.result;
 
-    // take contents of file and insert it into array buffer
-    const data = await file.arrayBuffer();
+        // parse through the workbook
+        const workbook = XLSX.read(bufferArray, { type: "buffer" });
 
-    // parse through the workbook
-    const workbook = XLSX.read(data);
+        const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+        const jsonData = XLSX.utils.sheet_to_json(worksheet);
 
-    const worksheet = workbook.Sheets[workbook.SheetNames[0]];
-    const jsonData = XLSX.utils.sheet_to_json(worksheet);
+        resolve(jsonData);
+      };
 
-    console.log(jsonData);
+      fileReader.onerror = (error) => {
+        reject(error);
+      };
+    });
+    promise.then((d) => {
+      setItems(d);
+    });
   };
 
   return (
-    <>
+    <div className="main">
       <div className="body">
         <div className="drag-area">
           <div className="icon">
@@ -35,10 +42,40 @@ export const ParseExcel = () => {
           </div>
           <header>Upload File</header>
           <label>
-            <input type="file" onChange={(e) => handleFile(e)} />
+            <input
+              type="file"
+              onChange={(e) => {
+                const file = e.target.files[0];
+                readExcel(file);
+              }}
+            />
           </label>
         </div>
       </div>
-    </>
+      <div className="container rounded-3">
+        <table className="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Skill</th>
+              <th scope="col">Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            {items.map((d) => (
+              <tr key={d.id}>
+                <th scope="row">{d.id}</th>
+                <td>{d.first_name}</td>
+                <td>{d.last_name}</td>
+                <td>{d.skills}</td>
+                <td>{d.experience}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 };
