@@ -17,24 +17,20 @@ export default class About extends Component {
           <div className="row pt-2 pt-md-3">
             <div className="col-md-6">
               <p className="fs-lg pe-lg-4 mb-1 mb-lg-4">
-                Mi semper risus ultricies orci pulvinar in at enim orci. Quis
-                facilisis nunc pellentesque in ullamcorper sit. Lorem blandit
-                arcu sapien, senectus libero, amet dapibus cursus quam. Eget
-                pellentesque eu purus volutpat adipiscing malesuada. Purus nisi,
-                tortor vel lacus. Donec diam molestie ultrices vitae eget
-                pulvinar fames. Velit lacus mi purus velit justo, amet. Nascetur
-                lobortis diam, duis orci. Vitae nibh amet lorem pellentesque.
+                We are a passionate group of developers who want to help you get connected to recruiters and
+                land a job. ResConnect has connections to many company partners that are willing to read your
+                resume and look for employees. Our goal is to create a software that we wish we had when we were in our very own job 
+                search. We believe everyone should have access to affordable and trustworthy software that 
+                will give you the confidence to show off your resume. 
               </p>
             </div>
             <div className="col-md-6">
               <p className="fs-lg ps-lg-4 mb-1 mb-lg-4">
-                Ac at sed sit senectus massa. Massa ante amet ultrices magna
-                porta tempor. Aliquet diam in et magna ultricies mi at. Lectus
-                enim, vel enim egestas nam pellentesque et leo. Elit mi faucibus
-                laoreet aliquam pellentesque sed aliquet integer massa. Orci leo
-                tortor ornare id mattis auctor aliquam volutpat aliquet. Odio
-                lectus viverra eu blandit nunc malesuada vitae eleifend
-                pulvinar. In ac fermentum sit in orci.
+                Started in a college students dorm, ResConnect has grown into one of the top resume parsers to this date.
+                It has first started as a google company case project, but over 3 years of development a team has been
+                created to bring you software that will help you get your dream job. ResConnect has 15 employees all
+                from different professional backgrounds. Ranging from software developers, data scientist, human resources
+                and job recruiters. 
               </p>
             </div>
           </div>
