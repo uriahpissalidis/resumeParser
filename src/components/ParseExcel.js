@@ -6,6 +6,7 @@ import { faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export const ParseExcel = () => {
   const [items, setItems] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const readExcel = (file) => {
     const promise = new Promise((resolve, reject) => {
@@ -29,6 +30,7 @@ export const ParseExcel = () => {
       };
     });
     promise.then((d) => {
+      console.log(d);
       setItems(d);
     });
   };
@@ -53,6 +55,15 @@ export const ParseExcel = () => {
         </div>
       </div>
       <div className="container rounded-3">
+        <input
+          type="text"
+          placeholder="Search ..."
+          onChange={(e) => {
+            setSearchTerm(e.target.value)
+            
+          }}
+        />
+        
         <table className="table table-dark table-striped">
           <thead>
             <tr>
