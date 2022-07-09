@@ -1,4 +1,4 @@
-## ResConnect
+### ResConnect
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
